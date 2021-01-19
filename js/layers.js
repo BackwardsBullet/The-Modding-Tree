@@ -9,7 +9,7 @@ addLayer("m", {
     color: "#4BDC13",
     requires: new Decimal("1e9"), // Can be a function that takes requirement increases into account
     resource: "Machine Size", // Name of prestige currency
-    baseResource: "scraps", // Name of resource prestige is based on
+    baseResource: "Scraps", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.45, // Prestige currency exponent
@@ -30,7 +30,7 @@ addLayer("m", {
         11: {
                 title: "Scrap Boost",
                 description: "blah",
-                currencyDisplayName: "scraps", // Use if using a nonstandard currency
+                currencyDisplayName: "Scraps", // Use if using a nonstandard currency
                 currencyInternalName: 0, // Use if using a nonstandard currency
                 cost: new Decimal(50),
                 unlocked() { return player[this.layer].unlocked }
