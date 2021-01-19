@@ -33,5 +33,6 @@ addLayer("m", {
                 cost: new Decimal(50),
                 unlocked() { return player[this.layer].unlocked }
         },
+    }
     layerShown(){return true}
 })
