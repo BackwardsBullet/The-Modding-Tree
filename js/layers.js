@@ -24,13 +24,5 @@ addLayer("m", {
     hotkeys: [
         {key: "m", description: "M: Reset for Machine Size", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    upgrades: {
-        rows: 5
-        cols: 5
-        11: {
-            description: "Blah",
-            cost: new Decimal(100),
-        },
-    }
     layerShown(){return true}
 })
