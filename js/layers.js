@@ -31,9 +31,7 @@ addLayer("m", {
                 title: "Scrap Boost",
                 description: "blah",
                 cost: new Decimal(50),
-                effect(){
-                        
-                },
+                unlocked() { return player[this.layer].unlocked }
         },
     layerShown(){return true}
 })
