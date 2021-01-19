@@ -24,5 +24,16 @@ addLayer("m", {
     hotkeys: [
         {key: "m", description: "M: Reset for Machine Size", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
+    upgrades: {
+        rows: 1,
+        cols: 1,
+        11: {
+                title: "Scrap Boost",
+                description: "blah",
+                cost: new Decimal(50),
+                effect(){
+                        
+                },
+        },
     layerShown(){return true}
 })
