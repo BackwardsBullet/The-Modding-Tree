@@ -31,7 +31,7 @@ addLayer("m", {
                 title: "Scrap Boost",
                 description: "blah",
                 currencyDisplayName: "Scraps", // Use if using a nonstandard currency
-                currencyInternalName: 0, // Use if using a nonstandard currency
+                currencyInternalName: 00, // Use if using a nonstandard currency
                 cost: new Decimal(50),
                 unlocked() { return player[this.layer].unlocked }
         },
